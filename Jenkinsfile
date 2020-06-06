@@ -25,6 +25,7 @@ pipeline {
         Stage('Greet') {
             Steps{
             echo '$(params.Greeting) world!'
-    }
+            }
         }
+}
 }
