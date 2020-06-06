@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    parameters{
+    string(name:'Greeting',defaultValue: 'Hello', Description: 'How Should I greet the world?')
+    }
+    
 
     stages {
         stage('Build') {
@@ -17,5 +22,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        Stage('Greet') {
+            Steps{
+            echo '$(params.Greeting) world!'
     }
+        }
 }
