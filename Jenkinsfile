@@ -22,8 +22,8 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        Stage('Greet') {
-            Steps{
+        stage('Greet') {
+            steps{
             echo '$(params.Greeting) world!'
             }
         }
