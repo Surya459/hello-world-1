@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters{
-    string(name:'Greeting',defaultValue: 'Hello', Description: 'How Should I greet the world?')
+    string(name:'Greeting',defaultValue:'Hello', description:'How Should I greet the world?')
     }
     
 
