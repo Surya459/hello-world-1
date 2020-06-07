@@ -13,7 +13,7 @@ pipeline {
     parameters{
     string(name:'Greeting',defaultValue:'Hello', description:'How Should I greet the world?')
         choice(name:'Intent',choices: ['low','high','thope'],description: 'just playing around')
-        booleanParam(name: 'Executedeploy', defaultValue: true, desciption: 'to deploy or not')
+        booleanParam(name: 'Executedeploy', defaultValue: true, description: 'to deploy or not')
     }
     
 
