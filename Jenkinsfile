@@ -1,4 +1,4 @@
-CODE_CHANGES = getGitChanges()
+
 
 pipeline {
     agent any
@@ -19,13 +19,7 @@ pipeline {
 
     stages {
         stage('Build') {
-            
-            when{
-            
-                expression{
-                CODE_CHANGES == true
-                }
-            }
+          
             steps {
                 echo 'Building..'
                 echo "Building version: ${NEW_VERSION}"
