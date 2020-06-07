@@ -64,6 +64,8 @@ pipeline {
         stage('Greet') {
             steps{
                 echo "${params.Greeting} world!"
+                
+                echo 'added webhook'
             }
         }
 }
